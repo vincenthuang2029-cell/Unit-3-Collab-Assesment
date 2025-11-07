@@ -38,3 +38,21 @@ Our mission is to:
  Evergreen and aromatic, pine trees thrive in colder regions.
 
  ![](https://www.shutterstock.com/image-photo/snow-covered-pine-trees-winter-260nw-2635668635.jpg)
+
+ ---
+
+ ### Tree Identification Tool
+
+ You can use this simple **Javascript** function to identify a tree by its characteristics:
+
+ ```
+ function identify_tree(leaf_shape, region){
+    if (leaf_shape == "needle' && region == "cold"){
+        return "Pine Tree"
+    } else if(leaf_shape =="broad" && region == "temperate"){
+        return "Oak Tree"
+    } else {
+        return "Unknown Tree"
+    }
+ }
+console.log(identify_tree("needle", "cold"))
